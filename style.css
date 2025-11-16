@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Bowlby One SC", Roboto, sans-serif;
+}
+
+body {
+    height: 600px;
+    background-color: black; 
+    margin: 0;
+}
+
+.try {
+    height: 100vh;    
+    width: 100vw;  
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        #5b47de,   
+        #3d39ac,  
+        #242a7c,   
+        #131a4d,  
+        #000000    
+    );
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    height: 30px;
+}
+
+ul {
+    list-style: none; 
+    display: flex;
+    gap: 40px;
+}
+
+.middlle ul li {
+    position: relative;
+}
+
+.navlinks {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none; 
+    color: white;
+    transition: background-color 0.3s, padding 0.3s, border-radius 0.3s;
+}
+
+.navlinks:hover {
+    background-color: #636CCB;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+.arrowdown {
+    height: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+.login {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 15px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.login:hover {
+    opacity: 0.6;
+}
+
+.arrowdown:hover {
+    opacity: 0.6;
+    background-color: #636CCB;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.top h1 {
+    font-size: 85px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+.section1 p {
+    margin-top: 40px;
+    font-family: "Funnel Display", sans-serif;  
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 800px;
+}
+
+.downloadbutton img {
+    height: 18px;
+    padding-right: 13px;
+    vertical-align: middle;
+}
+
+.section1 button {
+    margin-top: 50px;
+    background-color: #5865f2;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section1 button:hover {
+    opacity: 0.7;
+}
+
+.absolute {
+    position: absolute;
+    top: 150;
+    left: 100px;
+    height: auto;
+    pointer-events: none; /* Ensures it doesn't interfere with other elements */
+}
+
+.absolutes1 {
+    height: 200px;
+}
+
+.absolutes {
+    height: 250px;
+    position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+.abso {
+    position: absolute;
+    bottom: 100px;
+    right: 320px;
+    height: auto;
+    pointer-events: none; 
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.section2 {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 320px;
+}
+
+.malabo {
+    max-width: 100%;
+    height: auto;
+    height: 750px;
+    margin-top: -150px;
+}
+
+.pig {
+    height: 390px;
+    position: absolute;
+    left: 200px;
+    bottom: -40px;
+}
+
+.hat {
+    height: 95px;
+    position: absolute;
+    left: 240px;
+    bottom: 310px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50%   { transform: rotate(25deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.background {
+    height: 720px;
+    width: 700px;
+    border-radius: 90px;
+    position: relative;
+    background-image: linear-gradient(to bottom, #5865f2, #8d89f7, #b7affa, #dcd6fd, #ffffff);
+}
+
+.loky {
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.text h1 {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 0 160px;
+    margin-bottom: 150px;
+}
+
+.text {
+    text-align: start;
+    width: 800px;
+}
+
+.text p {
+    margin-top:  30px;
+    margin-bottom: 35px;
+    font-family: "Funnel Display", sans-serif;  
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.app {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 10px;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: opacity 0.3s;
+    font-family: "Funnel Display", sans-serif;        
+}
+
+.app:hover {
+    opacity: 0.8;
+}
+
+.fa-google-play {
+    font-size: 17px;
+    vertical-align: middle;
+    height: 18px;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: black;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.fa-apple {
+    height: 18px;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: black;
+    font-size: 19px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 0 160px;
+    margin-top: 300px;
+}
+
+.lokypc {
+    height: 650px;
+    width: 480px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 35px;
+}
+
+.background2 {
+    height: 750px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 90px;
+    background-image: linear-gradient(to bottom, #94c720, #30e2a7, #58eefc, #caf2ff, #ffffff);
+}
+
+.text2 {
+    text-align: start;
+    width: 800px;
+}
+
+.text2 h1 {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.text2 p {
+    margin-top:  30px;
+    margin-bottom: 35px;
+    font-family: "Funnel Display", sans-serif;  
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.fa-windows, .fa-linux {
+    height: 18px;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: black;
+    font-size: 17px;
+}
+
+.fa-angle-down {
+    color: black;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 0 160px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+
+.pccs {
+    height: 600px;
+    width: 480px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.background3 {
+    height: 800px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 90px;
+    background-image: linear-gradient(to bottom, #c73bc2, #ca7ade, #d3aaf1, #e3d6fc, #ffffff);
+}
+
+.text3 {
+    text-align: start;
+    width: 800px;
+}
+
+.text3 h1 {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.text3 p {
+    margin-top:  30px;
+    margin-bottom: 35px;
+    font-family: "Funnel Display", sans-serif;  
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.fa-playstation, .fa-xbox {
+    height: 18px;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: black;
+    font-size: 17px;
+}
+
+.try2 {
+    height: 100vh;    
+    width: 100vw;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to top,
+        #5b47de,   
+        #3d39ac,  
+        #242a7c,   
+        #131a4d,  
+        #000000    
+    );
+}
+
+.bottom-content {
+    text-align: center;
+}
+
+.bottom-content h1 {
+    font-size: 76px;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.bottom-content p {
+    font-family: "Funnel Display", sans-serif;  
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    width: 650px;
+    padding-left: 55px;
+}
+
+.bottom-content button {
+    background-color: #5865f2;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.bottom-content button:hover {
+    opacity: 0.7;
+}
+
+.fa-angle-down {
+    color: white;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.last {
+    height: 300px;
+    position: absolute;
+    left: 180px;
+    top: 50px;
+}
+
+.last2 {
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    right: 180px;
+}
+
+footer {
+    display: flex;
+    padding-right: 57px;
+    padding-left: 57px;
+    padding-top: 90px;
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, #2934ac, #3e46bc, #5159cc, #636cdc, #757fec);
+}
+
+.footer-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+}
+
+.options {
+    opacity: 0;
+    pointer-events: none; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.menu:hover .options{
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropdown-menu {
+    background: rgba(197, 196, 196, 0.1); /* semi-transparent background */
+    backdrop-filter: blur(10px);      /* blurry frosted effect */
+    -webkit-backdrop-filter: blur(13px); 
+    font-size: 15px;
+     border-radius: 18px;
+     width: 280px;
+}
+
+.dropdown-menu ul {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.dropdown-menu img {
+    height: 17px;
+    margin-left: 5px;
+    vertical-align: middle; 
+    margin-left: 180px;
+}
+
+.footer-bottom {
+    display: block;
+}
+
+.ewan {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.ewan h4 {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.imagebot {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.language {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffffff80;
+}
+
+.fa-tiktok, .fa-instagram, .fa-twitter, .fa-facebook-f, .fa-youtube {
+    gap: 20px;
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.footer-content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 850px;
+}
+
+.haha h4 {
+    color: #ffffff80;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.haha p {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.haha p:hover {
+    text-decoration: underline;
+}
+
+.h1 {
+    position: absolute;
+    bottom: -100px;
+    font-size: 320px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
